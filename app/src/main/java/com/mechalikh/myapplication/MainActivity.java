@@ -111,17 +111,9 @@ public class MainActivity extends AppCompatActivity {
         dialog.setContentView(R.layout.custom_dialog);
         dialog.setTitle("Custom Dialog");
 
-        Button btnCancel = dialog.findViewById(R.id.btn_cancel);
-        Button btnSubmit = dialog.findViewById(R.id.btn_submit);
+        Button btnCancel = dialog.findViewById(R.id.dialog_button);
 
         btnCancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dialog.dismiss();
-            }
-        });
-
-        btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "Submitted", Toast.LENGTH_SHORT).show();
